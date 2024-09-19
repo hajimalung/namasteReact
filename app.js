@@ -13,7 +13,10 @@ root.render(heading);
  *      </div>
  * </div>
  * 
- */
+*/
+
+// if i hvae to give siblings for same parent 
+// we can pass array of react elements as third param
 
 const parent = React.createElement(
     "div",
@@ -21,11 +24,11 @@ const parent = React.createElement(
     React.createElement( 
         "div",
         { id: "child" },
-        React.createElement(
-            "h1",
-            {},
-            "I am an h1 tag!")
+        [React.createElement("h1",{},"I am an h1 tag!"), React.createElement("h2",{},"I am an h2 tag!")]
     )
 );
 
-root.render(parent);
+// this removes if anything is already present in root and renders given react element
+root.render(parent); 
+
+
