@@ -1,0 +1,6 @@
+// second param is object with attributes and their values
+const heading = React.createElement("h1",{ id : "heading"},"Hello world from react!");
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
