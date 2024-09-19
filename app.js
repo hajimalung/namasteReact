@@ -32,3 +32,7 @@ const parent = React.createElement(
 root.render(parent); 
 
 
+// if we have to create complex nested elements it will be difficult to do with this 
+// thats where JSX comes into the picture.
+// most of the ppl think react can be written only in JSX but the above exampl is core written in plain js
+

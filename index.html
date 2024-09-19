@@ -16,13 +16,17 @@
         heading.innerHTML = "Hello world from js!";
         document.getElementById("root").appendChild(heading);
     </script> -->
+
+    <!-- sequence is import react then dom and then load our app -->
+
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="./app.js"></script>
     <script>
         
         // const root2 = ReactDOM.createRoot(document.getElementById("root2")); // reusing same heading to render in root2 also
-        // root2.render(heading);
+        // root2.render(heading); // this will overide any other elements in root element
+    
     </script>
 </body>
 </html>
