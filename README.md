@@ -16,8 +16,14 @@
 - Differential bundling - capability - supports older browsers
 - Diagnostics - Better error suggestion 
 - can be soted in HTTPS
+- does tree shaking - (removes unused code)
 
  https://parceljs.org/docs/
 
+
+# Browserslist
+- we should configure/tell project what all browsers we want to support  
+
+https://browserslist.dev/
 
 
