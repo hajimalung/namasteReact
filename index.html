@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="root">
-        <!-- <h1>hello world!</h1> -->
+        <h1>hello world!</h1>
     </div>
     <div id="root2"> 
         <h2>Baba is hear!!</h2>
@@ -21,14 +21,16 @@
 
     <!-- sequence is import react then dom and then load our app -->
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="./app.js"></script>
-    <script>
+    <!-- using from npm package -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <script src="./app.js" type="module"></script>
+    <!-- <script>
         
         // const root2 = ReactDOM.createRoot(document.getElementById("root2")); // reusing same heading to render in root2 also
         // root2.render(heading); // this will overide any other elements in root element   
     
-    </script>
+    </script> -->
 </body>
 </html>

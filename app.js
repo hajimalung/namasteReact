@@ -1,5 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // second param is object with attributes and their values
-const heading = React.createElement("h1",{ id : "heading"},"Hello world from react!");
+const heading = React.createElement("h1",{ id : "heading"},"Hello world from react! 😍");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,7 +27,7 @@ const parent = React.createElement(
     React.createElement( 
         "div",
         { id: "child" },
-        [React.createElement("h1",{},"I am an h1 tag!"), React.createElement("h2",{},"I am an h2 tag!")]
+        [React.createElement("h1",{},"I am an h1 tag! 😍"), React.createElement("h2",{},"I am an h2 tag!")]
     )
 );
 
