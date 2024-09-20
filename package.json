@@ -1,0 +1,14 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "this is react learning project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "hajimalung baba",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
