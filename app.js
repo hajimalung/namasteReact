@@ -45,10 +45,13 @@ const HeadingComponent = ()=> (<h1 className="header" tabIndex="1">Namaste react
 
 const number = 10000;
 
+const reactEle = (<span> this is react element! 🐶 </span>);
+
 // loading component inside another component - also called component composition
 // in { } we can run js inside it
 const HeadingComponent2 = ()=> {
     return  <div className="container">
+                { reactEle }
                 <HeadingComponent />
                 <h2> { number + 100 } </h2>
                 <h1 className="header" tabIndex="1">Namaste react functional component! 🐙</h1>
