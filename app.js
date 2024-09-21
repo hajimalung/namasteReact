@@ -43,10 +43,14 @@ const jsxHeading = (
 // industry common convention
 const HeadingComponent = ()=> (<h1 className="header" tabIndex="1">Namaste react functional component! </h1>); 
 
-// loading component inside another component
+const number = 10000;
+
+// loading component inside another component - also called component composition
+// in { } we can run js inside it
 const HeadingComponent2 = ()=> {
     return  <div className="container">
                 <HeadingComponent />
+                <h2> { number + 100 } </h2>
                 <h1 className="header" tabIndex="1">Namaste react functional component! 🐙</h1>
             </div>;
 };
