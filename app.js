@@ -43,8 +43,12 @@ const jsxHeading = (
 // industry common convention
 const HeadingComponent = ()=> (<h1 className="header" tabIndex="1">Namaste react functional component! </h1>); 
 
+// loading component inside another component
 const HeadingComponent2 = ()=> {
-    return <h1 className="header" tabIndex="1">Namaste react functional component! 🐙</h1>;
+    return  <div className="container">
+                <HeadingComponent />
+                <h1 className="header" tabIndex="1">Namaste react functional component! 🐙</h1>
+            </div>;
 };
 
 
