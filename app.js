@@ -1,41 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// second param is object with attributes and their values
-const heading = React.createElement("h1",{ id : "heading"},"Hello world from react! 😍");
+// create react element using React core
+const heading = React.createElement(
+    "h1",
+    { id:"header" },
+    "Hello React 🚀"
+);
+
+// create react element using JSX
+// JSX - not html in javascript
+// JSX is html like or XML like syntax - but not html
+const jsxHeading = <h1 id="heading">Namaste React usin JSX 🔥 🚀</h1>
+// console.log(jsxHeading); // jsxheading is a react elemet
+// jsx 
+
+// jsx is not pure js
+// js engine doesnot understand jsx
+// js engine understands only ES6 (ecma script 6)
+
+// parcel "the beast" transpiles the jsx code to pure js that browser understands using babel
+// before it reaches the js engine
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
-
-/**
- * 
- * <div id="parent">
- *      <div id="child">
- *          <h1> this is h1 tag </h1>
- *      </div>
- * </div>
- * 
-*/
-
-// if i hvae to give siblings for same parent 
-// we can pass array of react elements as third param
-
-const parent = React.createElement(
-    "div",
-    { id: "parent"},
-    React.createElement( 
-        "div",
-        { id: "child" },
-        [React.createElement("h1",{},"I am an h1 tag! 😍"), React.createElement("h2",{},"I am an h2 tag!")]
-    )
-);
-
-// this removes if anything is already present in root and renders given react element
-root.render(parent); 
-
-
-// if we have to create complex nested elements it will be difficult to do with this 
-// thats where JSX comes into the picture.
-// most of the ppl think react can be written only in JSX but the above exampl is core written in plain js
-
+root.render(jsxHeading);
