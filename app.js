@@ -40,14 +40,16 @@ const jsxHeading = (
 // js function that returns react/JSX element is functional react component
 // name it with Capital Letter
 
-const HeadingComponent = ()=> (<h1 className="header" tabIndex="1">Namaste react functional component! </h1>);
+// industry common convention
+const HeadingComponent = ()=> (<h1 className="header" tabIndex="1">Namaste react functional component! </h1>); 
 
 const HeadingComponent2 = ()=> {
-    return <h1 className="header" tabIndex="1">Namaste react functional component! </h1>;
+    return <h1 className="header" tabIndex="1">Namaste react functional component! 🐙</h1>;
 };
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+// root.render(HeadingComponent());// this is not correct way to render component
+root.render(<HeadingComponent2 />)
