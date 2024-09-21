@@ -49,6 +49,7 @@ const reactEle = (<span> this is react element! 🐶 </span>);
 
 // loading component inside another component - also called component composition
 // in { } we can run js inside it
+// JSX takes care of malicious script or attacks that may happen in { } like sanitizing that data
 const HeadingComponent2 = ()=> {
     return  <div className="container">
                 { reactEle }
@@ -58,9 +59,11 @@ const HeadingComponent2 = ()=> {
             </div>;
 };
 
+// compose anything inside anything BUT
+// WARNING : dot create cycles / loops it will hang browser
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(HeadingComponent());// this is not correct way to render component
+// root.render(HeadingComponent());// this is not standard way to render component but this is also fine
 root.render(<HeadingComponent2 />)
